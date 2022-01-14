@@ -58,7 +58,7 @@ Doel is om de mensen die last hebben van wilde dieren in hun buurt geruststellen
 </br>* Permissions asked enkel na het inloggen.
 <h4> Week van 29-05 November-December </h4>
 </br>* Met Xamarin Essentials ervoor gezorgd dat de app weet dat je ingelogt bent ook al sluit je de app.
-</br>* Integration van FireBase.
+</br>* Research over integration van FireBase.
 <h4> Week van 10-16 Januari </h4>
 </br>* Login en Registration connected met Firebase rldb.
 </br>* User kan wachtwoord veranderen connected met firebase db op settingspage.
