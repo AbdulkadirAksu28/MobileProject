@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project_Mobile_Abdulkadir_Aksu.Views.SettingsPage">
+    <ContentPage.Content>
+        <!--<TableView Intent="Settings">
+            <TableRoot>
+                <TableSection Title="Settings">
+                    <EntryCell Label="Name:" Placeholder="Enter Your First Name Here"/>
+                    <SwitchCell Text="Dark mode" On="true"/>
+                    <SwitchCell Text="Update app automatically"/>
+                </TableSection>
+            </TableRoot>
+        </TableView>-->
+        <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
+            <Label  Margin="0,5" x:Name="LblEmail" />
+            <Label  Margin="0,5" IsVisible="true" x:Name="LblEnkelEmail" />
+            <Entry  Margin="0,5" IsPassword="True" Placeholder="Enter new password" Text="{Binding Password}"/>
+            <Button Margin="0,15" VerticalOptions="Center" Text="Change password" Command="{Binding UpdateCommand}"/>
+            <Button Margin="0,15" VerticalOptions="Center" Text="Delete account" Command="{Binding DeleteCommand}"/>
+            <Button Margin="0,15" VerticalOptions="Center" Text="Logout" Command="{Binding LogoutCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
