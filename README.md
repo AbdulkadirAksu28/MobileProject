@@ -59,6 +59,11 @@ Doel is om de mensen die last hebben van wilde dieren in hun buurt geruststellen
 <h4> Week van 29-05 November-December </h4>
 </br>* Met Xamarin Essentials ervoor gezorgd dat de app weet dat je ingelogt bent ook al sluit je de app.
 </br>* Integration van FireBase.
+<h4> Week van 10-16 Januari </h4>
+</br>* Login en Registration connected met Firebase rldb.
+</br>* User kan wachtwoord veranderen connected met firebase db op settingspage.
+</br>* User kan account verwijderen connected met firenase db op settingspage.
+</br>* Git push,pull problemen, mislukt aantal keren push en commits, merge conflicts, solution file is oud terwijl de rest van de folders up to date zijn.
 
 ## Link video
 ## Bronnen
