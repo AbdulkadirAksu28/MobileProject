@@ -64,6 +64,7 @@ Doel is om de mensen die last hebben van wilde dieren in hun buurt geruststellen
 </br>* User kan wachtwoord veranderen connected met firebase db op settingspage.
 </br>* User kan account verwijderen connected met firenase db op settingspage.
 </br>* Git push,pull problemen, mislukt aantal keren push en commits, merge conflicts, solution file is oud terwijl de rest van de folders up to date zijn.
+</br>* Eigen repo aangemaakt https://github.com/AbdulkadirAksu28/MobileProject.
 
 ## Link video
 ## Bronnen
