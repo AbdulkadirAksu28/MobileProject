@@ -1,5 +1,4 @@
-﻿using Firebase.Auth;
-using Project_Mobile_Abdulkadir_Aksu.Views;
+﻿using Project_Mobile_Abdulkadir_Aksu.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

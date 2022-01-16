@@ -1,8 +1,5 @@
 ﻿using Firebase.Database;
 using Firebase.Database.Query;
-using FireSharp.Interfaces;
-using FireSharp.Config;
-using FireSharp.Response;
 using Project_Mobile_Abdulkadir_Aksu.Models;
 using System;
 using System.Collections.Generic;

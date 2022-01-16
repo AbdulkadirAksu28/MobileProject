@@ -2,19 +2,6 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
-      "FirebaseAuthentication.net/3.7.2": {
-        "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1",
-          "Newtonsoft.Json": "11.0.2"
-        },
-        "compile": {
-          "lib/netstandard1.1/Firebase.Auth.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.1/Firebase.Auth.dll": {}
-        }
-      },
       "FirebaseDatabase.net/4.0.7": {
         "type": "package",
         "dependencies": {
@@ -29,20 +16,6 @@
           "lib/netstandard2.0/Firebase.dll": {}
         }
       },
-      "FireSharp/2.0.4": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Bcl.Async": "1.0.168",
-          "Microsoft.Net.Http": "2.2.28",
-          "Newtonsoft.Json": "6.0.4"
-        },
-        "compile": {
-          "lib/portable-net45+sl5+wp8+win8/FireSharp.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+sl5+wp8+win8/FireSharp.dll": {}
-        }
-      },
       "LiteDB/4.1.4": {
         "type": "package",
         "dependencies": {
@@ -54,52 +27,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/LiteDB.dll": {}
-        }
-      },
-      "Microsoft.Bcl/1.1.9": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Bcl.Build": "1.0.14"
-        },
-        "compile": {
-          "lib/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "Microsoft.Bcl.Async/1.0.168": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Bcl": "1.1.8"
-        },
-        "compile": {
-          "lib/net40/Microsoft.Threading.Tasks.Extensions.Desktop.dll": {},
-          "lib/net40/Microsoft.Threading.Tasks.Extensions.dll": {},
-          "lib/net40/Microsoft.Threading.Tasks.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Microsoft.Threading.Tasks.Extensions.Desktop.dll": {},
-          "lib/net40/Microsoft.Threading.Tasks.Extensions.dll": {},
-          "lib/net40/Microsoft.Threading.Tasks.dll": {}
-        }
-      },
-      "Microsoft.Bcl.Build/1.0.14": {
-        "type": "package"
-      },
-      "Microsoft.Net.Http/2.2.28": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Bcl": "1.1.9",
-          "Microsoft.Bcl.Build": "1.0.14"
-        },
-        "compile": {
-          "lib/net45/System.Net.Http.Extensions.dll": {},
-          "lib/net45/System.Net.Http.Primitives.dll": {}
-        },
-        "runtime": {
-          "lib/net45/System.Net.Http.Extensions.dll": {},
-          "lib/net45/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -135,7 +62,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Newtonsoft.Json/13.0.1": {
+      "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -288,22 +215,10 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.GoogleMaps/3.3.0": {
+      "Xamarin.Forms.Maps/5.0.0.2291": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "3.0.0.482510"
-        },
-        "compile": {
-          "lib/netstandard2.0/Xamarin.Forms.GoogleMaps.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Xamarin.Forms.GoogleMaps.dll": {}
-        }
-      },
-      "Xamarin.Forms.Maps/5.0.0.2244": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Forms": "5.0.0.2244"
+          "Xamarin.Forms": "5.0.0.2291"
         },
         "compile": {
           "lib/netstandard2.0/Xamarin.Forms.Maps.dll": {}
@@ -315,18 +230,6 @@
     }
   },
   "libraries": {
-    "FirebaseAuthentication.net/3.7.2": {
-      "sha512": "d0Zc0tiE7NutI/jMX/T81LU/rX3HVBH8vtvKTbIeN6BCIQ+wipstz7tm5MnIgAeh4ehqCHTiVuMOHztqfCVCBQ==",
-      "type": "package",
-      "path": "firebaseauthentication.net/3.7.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "firebaseauthentication.net.3.7.2.nupkg.sha512",
-        "firebaseauthentication.net.nuspec",
-        "lib/netstandard1.1/Firebase.Auth.dll"
-      ]
-    },
     "FirebaseDatabase.net/4.0.7": {
       "sha512": "yj8J5al66pCXRibNsK0K1wB1ZsPeCJCnwRVfwCcd6ZQ5tbwouObt0hgp+LmzKY90bLfQJuwmnLpKzVYGwD/6xA==",
       "type": "package",
@@ -338,18 +241,6 @@
         "firebasedatabase.net.nuspec",
         "lib/netstandard2.0/Firebase.dll",
         "lib/netstandard2.0/Firebase.xml"
-      ]
-    },
-    "FireSharp/2.0.4": {
-      "sha512": "laSHpVUBG6iCTUixmpeUmYxie2zbziOBM+LU0v2A0ETE9dUyBA+8aY63xql/o8LXj+kFybBLYUKBUrLCZWaq+A==",
-      "type": "package",
-      "path": "firesharp/2.0.4",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "firesharp.2.0.4.nupkg.sha512",
-        "firesharp.nuspec",
-        "lib/portable-net45+sl5+wp8+win8/FireSharp.dll"
       ]
     },
     "LiteDB/4.1.4": {
@@ -369,253 +260,6 @@
         "lib/netstandard2.0/LiteDB.xml",
         "litedb.4.1.4.nupkg.sha512",
         "litedb.nuspec"
-      ]
-    },
-    "Microsoft.Bcl/1.1.9": {
-      "sha512": "USQ55innJy8K+tAXvVa1O8dUTp2s7pmJ5cJj6Tl02HtGc2xBDj0P2QH5620HbGXIWKWYhydoeQF8Rm/JRDBGhw==",
-      "type": "package",
-      "path": "microsoft.bcl/1.1.9",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "License-Stable.rtf",
-        "content/monoandroid/_._",
-        "content/monotouch/_._",
-        "content/net45/_._",
-        "content/portable-net45+win8+wp8+wpa81/_._",
-        "content/portable-net45+win8+wpa81/_._",
-        "content/portable-net451+win81+wpa81/_._",
-        "content/portable-net451+win81/_._",
-        "content/portable-win81+wp81+wpa81/_._",
-        "content/sl4/_._",
-        "content/sl5/_._",
-        "content/win8/_._",
-        "content/wp8/_._",
-        "content/wpa81/_._",
-        "lib/monoandroid/_._",
-        "lib/monotouch/_._",
-        "lib/net40/System.IO.dll",
-        "lib/net40/System.IO.xml",
-        "lib/net40/System.Runtime.dll",
-        "lib/net40/System.Runtime.xml",
-        "lib/net40/System.Threading.Tasks.dll",
-        "lib/net40/System.Threading.Tasks.xml",
-        "lib/net40/ensureRedirect.xml",
-        "lib/net45/_._",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.IO.dll",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.IO.xml",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Runtime.dll",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Runtime.xml",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Threading.Tasks.dll",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Threading.Tasks.xml",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/ensureRedirect.xml",
-        "lib/portable-net40+sl4+win8+wp8+wpa81/System.IO.dll",
-        "lib/portable-net40+sl4+win8+wp8+wpa81/System.IO.xml",
-        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Runtime.dll",
-        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Runtime.xml",
-        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Threading.Tasks.dll",
-        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Threading.Tasks.xml",
-        "lib/portable-net40+sl4+win8+wp8+wpa81/ensureRedirect.xml",
-        "lib/portable-net40+sl4+win8/System.IO.dll",
-        "lib/portable-net40+sl4+win8/System.IO.xml",
-        "lib/portable-net40+sl4+win8/System.Runtime.dll",
-        "lib/portable-net40+sl4+win8/System.Runtime.xml",
-        "lib/portable-net40+sl4+win8/System.Threading.Tasks.dll",
-        "lib/portable-net40+sl4+win8/System.Threading.Tasks.xml",
-        "lib/portable-net40+sl4+win8/ensureRedirect.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/System.IO.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/System.IO.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Runtime.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Runtime.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Threading.Tasks.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Threading.Tasks.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/ensureRedirect.xml",
-        "lib/portable-net40+win8+wp8+wpa81/System.IO.dll",
-        "lib/portable-net40+win8+wp8+wpa81/System.IO.xml",
-        "lib/portable-net40+win8+wp8+wpa81/System.Runtime.dll",
-        "lib/portable-net40+win8+wp8+wpa81/System.Runtime.xml",
-        "lib/portable-net40+win8+wp8+wpa81/System.Threading.Tasks.dll",
-        "lib/portable-net40+win8+wp8+wpa81/System.Threading.Tasks.xml",
-        "lib/portable-net40+win8+wp8+wpa81/ensureRedirect.xml",
-        "lib/portable-net40+win8/System.IO.dll",
-        "lib/portable-net40+win8/System.IO.xml",
-        "lib/portable-net40+win8/System.Runtime.dll",
-        "lib/portable-net40+win8/System.Runtime.xml",
-        "lib/portable-net40+win8/System.Threading.Tasks.dll",
-        "lib/portable-net40+win8/System.Threading.Tasks.xml",
-        "lib/portable-net40+win8/ensureRedirect.xml",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/portable-net45+win8+wpa81/_._",
-        "lib/portable-net451+win81+wpa81/_._",
-        "lib/portable-net451+win81/_._",
-        "lib/portable-win81+wp81+wpa81/_._",
-        "lib/sl4-windowsphone71/System.IO.dll",
-        "lib/sl4-windowsphone71/System.IO.xml",
-        "lib/sl4-windowsphone71/System.Runtime.dll",
-        "lib/sl4-windowsphone71/System.Runtime.xml",
-        "lib/sl4-windowsphone71/System.Threading.Tasks.dll",
-        "lib/sl4-windowsphone71/System.Threading.Tasks.xml",
-        "lib/sl4-windowsphone71/ensureRedirect.xml",
-        "lib/sl4/System.IO.dll",
-        "lib/sl4/System.IO.xml",
-        "lib/sl4/System.Runtime.dll",
-        "lib/sl4/System.Runtime.xml",
-        "lib/sl4/System.Threading.Tasks.dll",
-        "lib/sl4/System.Threading.Tasks.xml",
-        "lib/sl5/System.IO.dll",
-        "lib/sl5/System.IO.xml",
-        "lib/sl5/System.Runtime.dll",
-        "lib/sl5/System.Runtime.xml",
-        "lib/sl5/System.Threading.Tasks.dll",
-        "lib/sl5/System.Threading.Tasks.xml",
-        "lib/win8/_._",
-        "lib/wp8/_._",
-        "lib/wpa81/_._",
-        "microsoft.bcl.1.1.9.nupkg.sha512",
-        "microsoft.bcl.nuspec"
-      ]
-    },
-    "Microsoft.Bcl.Async/1.0.168": {
-      "sha512": "tUNC02eBwDKpGre0BcNIvblLv1q0Q3DnS/vtkRHj2FE1sXwt386HAudztyl5C0U88hllrqHDvtlz8bK0Y8cHDA==",
-      "type": "package",
-      "path": "microsoft.bcl.async/1.0.168",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "License-Stable.rtf",
-        "lib/net40/Microsoft.Threading.Tasks.Extensions.Desktop.dll",
-        "lib/net40/Microsoft.Threading.Tasks.Extensions.Desktop.xml",
-        "lib/net40/Microsoft.Threading.Tasks.Extensions.dll",
-        "lib/net40/Microsoft.Threading.Tasks.Extensions.xml",
-        "lib/net40/Microsoft.Threading.Tasks.dll",
-        "lib/net40/Microsoft.Threading.Tasks.xml",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/Microsoft.Threading.Tasks.Extensions.dll",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/Microsoft.Threading.Tasks.Extensions.xml",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/Microsoft.Threading.Tasks.dll",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/Microsoft.Threading.Tasks.xml",
-        "lib/portable-net45+win8+wp8+wpa81/Microsoft.Threading.Tasks.Extensions.dll",
-        "lib/portable-net45+win8+wp8+wpa81/Microsoft.Threading.Tasks.Extensions.xml",
-        "lib/portable-net45+win8+wp8+wpa81/Microsoft.Threading.Tasks.dll",
-        "lib/portable-net45+win8+wp8+wpa81/Microsoft.Threading.Tasks.xml",
-        "lib/portable-net45+win8+wpa81/Microsoft.Threading.Tasks.Extensions.dll",
-        "lib/portable-net45+win8+wpa81/Microsoft.Threading.Tasks.Extensions.xml",
-        "lib/portable-net45+win8+wpa81/Microsoft.Threading.Tasks.dll",
-        "lib/portable-net45+win8+wpa81/Microsoft.Threading.Tasks.xml",
-        "lib/sl4-windowsphone71/Microsoft.Threading.Tasks.Extensions.Phone.dll",
-        "lib/sl4-windowsphone71/Microsoft.Threading.Tasks.Extensions.Phone.xml",
-        "lib/sl4-windowsphone71/Microsoft.Threading.Tasks.Extensions.dll",
-        "lib/sl4-windowsphone71/Microsoft.Threading.Tasks.Extensions.xml",
-        "lib/sl4-windowsphone71/Microsoft.Threading.Tasks.dll",
-        "lib/sl4-windowsphone71/Microsoft.Threading.Tasks.xml",
-        "lib/sl4/Microsoft.Threading.Tasks.Extensions.Silverlight.dll",
-        "lib/sl4/Microsoft.Threading.Tasks.Extensions.Silverlight.xml",
-        "lib/sl4/Microsoft.Threading.Tasks.Extensions.dll",
-        "lib/sl4/Microsoft.Threading.Tasks.Extensions.xml",
-        "lib/sl4/Microsoft.Threading.Tasks.dll",
-        "lib/sl4/Microsoft.Threading.Tasks.xml",
-        "lib/win8/Microsoft.Threading.Tasks.Extensions.dll",
-        "lib/win8/Microsoft.Threading.Tasks.Extensions.xml",
-        "lib/win8/Microsoft.Threading.Tasks.dll",
-        "lib/win8/Microsoft.Threading.Tasks.xml",
-        "lib/wp8/Microsoft.Threading.Tasks.Extensions.Phone.dll",
-        "lib/wp8/Microsoft.Threading.Tasks.Extensions.Phone.xml",
-        "lib/wp8/Microsoft.Threading.Tasks.Extensions.dll",
-        "lib/wp8/Microsoft.Threading.Tasks.Extensions.xml",
-        "lib/wp8/Microsoft.Threading.Tasks.dll",
-        "lib/wp8/Microsoft.Threading.Tasks.xml",
-        "lib/wpa81/Microsoft.Threading.Tasks.Extensions.dll",
-        "lib/wpa81/Microsoft.Threading.Tasks.Extensions.xml",
-        "lib/wpa81/Microsoft.Threading.Tasks.dll",
-        "lib/wpa81/Microsoft.Threading.Tasks.xml",
-        "microsoft.bcl.async.1.0.168.nupkg.sha512",
-        "microsoft.bcl.async.nuspec"
-      ]
-    },
-    "Microsoft.Bcl.Build/1.0.14": {
-      "sha512": "cDLKSvNvRa519hplsbSoYqO69TjdDIhfjtKUM0g20/nVROoWsGav9KCI9HtnGjLmdV1+TcUUDhbotcllibjPEA==",
-      "type": "package",
-      "path": "microsoft.bcl.build/1.0.14",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "License-Stable.rtf",
-        "content/net40/_._",
-        "content/netcore45/_._",
-        "content/portable-net40+win8+sl4+wp71+wpa81/_._",
-        "content/sl4-windowsphone71/_._",
-        "content/sl4/_._",
-        "microsoft.bcl.build.1.0.14.nupkg.sha512",
-        "microsoft.bcl.build.nuspec",
-        "tools/Install.ps1",
-        "tools/Microsoft.Bcl.Build.Tasks.dll",
-        "tools/Microsoft.Bcl.Build.targets",
-        "tools/Uninstall.ps1"
-      ]
-    },
-    "Microsoft.Net.Http/2.2.28": {
-      "sha512": "hPL9k+rPIpAj84RZSq3WtJkOD9uMStBovAIAz/0OQ+9hQIwQ2XqQlAhMqI4kw0XDxweJySIqNTMlkhRRuthcPQ==",
-      "type": "package",
-      "path": "microsoft.net.http/2.2.28",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "License-Stable.rtf",
-        "lib/monoandroid/System.Net.Http.Extensions.XML",
-        "lib/monoandroid/System.Net.Http.Extensions.dll",
-        "lib/monoandroid/System.Net.Http.Primitives.dll",
-        "lib/monoandroid/System.Net.Http.Primitives.xml",
-        "lib/monotouch/System.Net.Http.Extensions.XML",
-        "lib/monotouch/System.Net.Http.Extensions.dll",
-        "lib/monotouch/System.Net.Http.Primitives.dll",
-        "lib/monotouch/System.Net.Http.Primitives.xml",
-        "lib/net40/System.Net.Http.Extensions.XML",
-        "lib/net40/System.Net.Http.Extensions.dll",
-        "lib/net40/System.Net.Http.Primitives.dll",
-        "lib/net40/System.Net.Http.Primitives.xml",
-        "lib/net40/System.Net.Http.WebRequest.dll",
-        "lib/net40/System.Net.Http.WebRequest.xml",
-        "lib/net40/System.Net.Http.dll",
-        "lib/net40/System.Net.Http.xml",
-        "lib/net40/ensureRedirect.xml",
-        "lib/net45/System.Net.Http.Extensions.XML",
-        "lib/net45/System.Net.Http.Extensions.dll",
-        "lib/net45/System.Net.Http.Primitives.dll",
-        "lib/net45/System.Net.Http.Primitives.xml",
-        "lib/net45/ensureRedirect.xml",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Extensions.XML",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Extensions.dll",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Primitives.XML",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Primitives.dll",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.dll",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.xml",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/ensureRedirect.xml",
-        "lib/portable-net45+win8+wpa81/System.Net.Http.Extensions.XML",
-        "lib/portable-net45+win8+wpa81/System.Net.Http.Extensions.dll",
-        "lib/portable-net45+win8+wpa81/System.Net.Http.Primitives.dll",
-        "lib/portable-net45+win8+wpa81/System.Net.Http.Primitives.xml",
-        "lib/portable-net45+win8+wpa81/ensureRedirect.xml",
-        "lib/portable-net45+win8/System.Net.Http.Extensions.XML",
-        "lib/portable-net45+win8/System.Net.Http.Extensions.dll",
-        "lib/portable-net45+win8/System.Net.Http.Primitives.dll",
-        "lib/portable-net45+win8/System.Net.Http.Primitives.xml",
-        "lib/portable-net45+win8/ensureRedirect.xml",
-        "lib/sl4-windowsphone71/System.Net.Http.Extensions.XML",
-        "lib/sl4-windowsphone71/System.Net.Http.Extensions.dll",
-        "lib/sl4-windowsphone71/System.Net.Http.Primitives.XML",
-        "lib/sl4-windowsphone71/System.Net.Http.Primitives.dll",
-        "lib/sl4-windowsphone71/System.Net.Http.dll",
-        "lib/sl4-windowsphone71/System.Net.Http.xml",
-        "lib/win8/System.Net.Http.Extensions.XML",
-        "lib/win8/System.Net.Http.Extensions.dll",
-        "lib/win8/System.Net.Http.Primitives.dll",
-        "lib/win8/System.Net.Http.Primitives.xml",
-        "lib/wpa81/System.Net.Http.Extensions.XML",
-        "lib/wpa81/System.Net.Http.Extensions.dll",
-        "lib/wpa81/System.Net.Http.Primitives.dll",
-        "lib/wpa81/System.Net.Http.Primitives.xml",
-        "microsoft.net.http.2.2.28.nupkg.sha512",
-        "microsoft.net.http.nuspec"
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
@@ -777,10 +421,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/13.0.1": {
-      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+    "Newtonsoft.Json/11.0.2": {
+      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
       "type": "package",
-      "path": "newtonsoft.json/13.0.1",
+      "path": "newtonsoft.json/11.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -799,9 +443,12 @@
         "lib/netstandard1.3/Newtonsoft.Json.xml",
         "lib/netstandard2.0/Newtonsoft.Json.dll",
         "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "newtonsoft.json.13.0.1.nupkg.sha512",
-        "newtonsoft.json.nuspec",
-        "packageIcon.png"
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.11.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec"
       ]
     },
     "System.IO/4.3.0": {
@@ -1692,30 +1339,10 @@
         "xamarin.forms.nuspec"
       ]
     },
-    "Xamarin.Forms.GoogleMaps/3.3.0": {
-      "sha512": "C1wutzR7wLgUQuiG1NgArab0X02DGOKWW10+uLBUJE+Cac0+8J/TlLVqdqEl82BDGl3n71zmiLnHd5AZlrFEfw==",
+    "Xamarin.Forms.Maps/5.0.0.2291": {
+      "sha512": "ZgV54f3Jd1By7D79wbyWeOrcVE0eIvBGty+8HjvX1BTUEX7id/bxBXBBBFqfjLVgsdd7dpzlGvqC3nmVfCkfrQ==",
       "type": "package",
-      "path": "xamarin.forms.googlemaps/3.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.txt",
-        "lib/MonoAndroid70/Xamarin.Forms.GoogleMaps.Android.dll",
-        "lib/MonoAndroid70/Xamarin.Forms.GoogleMaps.dll",
-        "lib/UAP10/Xamarin.Forms.GoogleMaps.UWP.dll",
-        "lib/UAP10/Xamarin.Forms.GoogleMaps.dll",
-        "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll",
-        "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll",
-        "lib/netstandard1.0/Xamarin.Forms.GoogleMaps.dll",
-        "lib/netstandard2.0/Xamarin.Forms.GoogleMaps.dll",
-        "xamarin.forms.googlemaps.3.3.0.nupkg.sha512",
-        "xamarin.forms.googlemaps.nuspec"
-      ]
-    },
-    "Xamarin.Forms.Maps/5.0.0.2244": {
-      "sha512": "CW2eIeLplIFbuUTfa88XftvXf/4TDErccmeI9Qpi3f2q7CLa+UMYoSx8JWKufDj3ODFMmoPwSCzr/SUhXjwv9g==",
-      "type": "package",
-      "path": "xamarin.forms.maps/5.0.0.2244",
+      "path": "xamarin.forms.maps/5.0.0.2291",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1742,22 +1369,18 @@
         "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.pri",
         "lib/uap10.0.16299/Xamarin.Forms.Maps.dll",
-        "xamarin.forms.maps.5.0.0.2244.nupkg.sha512",
+        "xamarin.forms.maps.5.0.0.2291.nupkg.sha512",
         "xamarin.forms.maps.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "FireSharp >= 2.0.4",
-      "FirebaseAuthentication.net >= 3.7.2",
       "FirebaseDatabase.net >= 4.0.7",
       "NETStandard.Library >= 2.0.3",
-      "Newtonsoft.Json >= 13.0.1",
       "Xamarin.Essentials >= 1.7.0",
       "Xamarin.Forms >= 5.0.0.2291",
-      "Xamarin.Forms.GoogleMaps >= 3.3.0",
-      "Xamarin.Forms.Maps >= 5.0.0.2244"
+      "Xamarin.Forms.Maps >= 5.0.0.2291"
     ]
   },
   "packageFolders": {
@@ -1768,11 +1391,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Mobile\\backup mobile 14-01\\Project_Mobile_Abdulkadir_Aksu\\Project_Mobile_Abdulkadir_Aksu\\Project_Mobile_Abdulkadir_Aksu.csproj",
-      "projectName": "Project_Mobile_Abdulkadir_Aksu",
-      "projectPath": "C:\\Mobile\\backup mobile 14-01\\Project_Mobile_Abdulkadir_Aksu\\Project_Mobile_Abdulkadir_Aksu\\Project_Mobile_Abdulkadir_Aksu.csproj",
+      "projectUniqueName": "C:\\Mobile_Project_Abdulkadir_Aksu\\Mobile_Project_Abdulkadir_Aksu\\Mobile_Project_Abdulkadir_Aksu\\Mobile_Project_Abdulkadir_Aksu.csproj",
+      "projectName": "Mobile_Project_Abdulkadir_Aksu",
+      "projectPath": "C:\\Mobile_Project_Abdulkadir_Aksu\\Mobile_Project_Abdulkadir_Aksu\\Mobile_Project_Abdulkadir_Aksu\\Mobile_Project_Abdulkadir_Aksu.csproj",
       "packagesPath": "C:\\Users\\kadir\\.nuget\\packages\\",
-      "outputPath": "C:\\Mobile\\backup mobile 14-01\\Project_Mobile_Abdulkadir_Aksu\\Project_Mobile_Abdulkadir_Aksu\\obj\\",
+      "outputPath": "C:\\Mobile_Project_Abdulkadir_Aksu\\Mobile_Project_Abdulkadir_Aksu\\Mobile_Project_Abdulkadir_Aksu\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -1807,14 +1430,6 @@
       "netstandard2.0": {
         "targetAlias": "netstandard2.0",
         "dependencies": {
-          "FireSharp": {
-            "target": "Package",
-            "version": "[2.0.4, )"
-          },
-          "FirebaseAuthentication.net": {
-            "target": "Package",
-            "version": "[3.7.2, )"
-          },
           "FirebaseDatabase.net": {
             "target": "Package",
             "version": "[4.0.7, )"
@@ -1825,10 +1440,6 @@
             "version": "[2.0.3, )",
             "autoReferenced": true
           },
-          "Newtonsoft.Json": {
-            "target": "Package",
-            "version": "[13.0.1, )"
-          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.7.0, )"
@@ -1837,13 +1448,9 @@
             "target": "Package",
             "version": "[5.0.0.2291, )"
           },
-          "Xamarin.Forms.GoogleMaps": {
-            "target": "Package",
-            "version": "[3.3.0, )"
-          },
           "Xamarin.Forms.Maps": {
             "target": "Package",
-            "version": "[5.0.0.2244, )"
+            "version": "[5.0.0.2291, )"
           }
         },
         "imports": [
@@ -1859,47 +1466,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'FireSharp 2.0.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "FireSharp",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Bcl 1.1.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.Bcl",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Bcl.Async 1.0.168' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.Bcl.Async",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Net.Http 2.2.28' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.Net.Http",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    }
-  ]
+  }
 }
