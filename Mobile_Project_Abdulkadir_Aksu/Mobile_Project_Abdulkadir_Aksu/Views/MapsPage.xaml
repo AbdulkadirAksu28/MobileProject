@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
-             x:Class="Project_Mobile_Abdulkadir_Aksu.Views.MapsPage">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="Project_Mobile_Abdulkadir_Aksu.Views.MapsPage"
+             >
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Logout" Command="{Binding LogoutCommand}"/>
     </ContentPage.ToolbarItems>

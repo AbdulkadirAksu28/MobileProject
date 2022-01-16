@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Project_Mobile_Abdulkadir_Aksu.Views.NewItemPage.xaml", "Views/NewItemPage.xaml", typeof(global::Project_Mobile_Abdulkadir_Aksu.Views.NewItemPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Mobile_Project_Abdulkadir_Aksu.Views.NewItemPage.xaml", "Views/NewItemPage.xaml", typeof(global::Project_Mobile_Abdulkadir_Aksu.Views.NewItemPage))]
 
 namespace Project_Mobile_Abdulkadir_Aksu.Views {
     

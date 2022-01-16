@@ -1,5 +1,4 @@
-﻿using Firebase.Auth;
-using Project_Mobile_Abdulkadir_Aksu.ViewModels;
+﻿using Project_Mobile_Abdulkadir_Aksu.ViewModels;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
