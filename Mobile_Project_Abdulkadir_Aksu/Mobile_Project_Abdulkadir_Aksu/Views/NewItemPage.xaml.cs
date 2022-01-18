@@ -1,12 +1,12 @@
-﻿using Project_Mobile_Abdulkadir_Aksu.Models;
-using Project_Mobile_Abdulkadir_Aksu.ViewModels;
+﻿using Mobile_Project_Abdulkadir_Aksu.Models;
+using Mobile_Project_Abdulkadir_Aksu.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Project_Mobile_Abdulkadir_Aksu.Views
+namespace Mobile_Project_Abdulkadir_Aksu.Views
 {
     public partial class NewItemPage : ContentPage
     {

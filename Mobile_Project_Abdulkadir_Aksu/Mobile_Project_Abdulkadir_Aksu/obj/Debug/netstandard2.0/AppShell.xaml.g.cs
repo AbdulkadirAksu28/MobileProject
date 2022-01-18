@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Mobile_Project_Abdulkadir_Aksu.AppShell.xaml", "AppShell.xaml", typeof(global::Project_Mobile_Abdulkadir_Aksu.AppShell))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Mobile_Project_Abdulkadir_Aksu.AppShell.xaml", "AppShell.xaml", typeof(global::Mobile_Project_Abdulkadir_Aksu.AppShell))]
 
-namespace Project_Mobile_Abdulkadir_Aksu {
+namespace Mobile_Project_Abdulkadir_Aksu {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("AppShell.xaml")]

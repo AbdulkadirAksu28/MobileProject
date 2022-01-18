@@ -59,6 +59,10 @@
             "Xamarin.Forms.Maps": {
               "target": "Package",
               "version": "[5.0.0.2291, )"
+            },
+            "Xamarin.GooglePlayServices.Maps": {
+              "target": "Package",
+              "version": "[117.0.1.3, )"
             }
           }
         }

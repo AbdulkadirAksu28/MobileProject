@@ -1,10 +1,10 @@
-﻿using Project_Mobile_Abdulkadir_Aksu.ViewModels;
-using Project_Mobile_Abdulkadir_Aksu.Views;
+﻿using Mobile_Project_Abdulkadir_Aksu.ViewModels;
+using Mobile_Project_Abdulkadir_Aksu.Views;
 using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
 
-namespace Project_Mobile_Abdulkadir_Aksu
+namespace Mobile_Project_Abdulkadir_Aksu
 {
     public partial class AppShell : Shell
     {

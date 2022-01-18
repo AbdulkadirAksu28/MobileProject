@@ -27,8 +27,14 @@ external-path;C:\Mobile_Project_Abdulkadir_Aksu\Mobile_Project_Abdulkadir_Aksu\M
 foreground;obj\Debug\120\res\mipmap-anydpi-v26\icon.xml
 foreground;obj\Debug\120\res\mipmap-anydpi-v26\icon_round.xml
 FrameLayout;C:\Mobile_Project_Abdulkadir_Aksu\Mobile_Project_Abdulkadir_Aksu\Mobile_Project_Abdulkadir_Aksu.Android\obj\Debug\120\lp\55\jl\res\layout\bottomtablayout.xml
+ImageButton;obj\Debug\120\res\layout\mapinfowindow.xml
+ImageButton;obj\Debug\120\res\layout\xamarinmapinfowindow.xml
+ImageView;obj\Debug\120\res\layout\mapinfowindow.xml
+ImageView;obj\Debug\120\res\layout\xamarinmapinfowindow.xml
 item;C:\Mobile_Project_Abdulkadir_Aksu\Mobile_Project_Abdulkadir_Aksu\Mobile_Project_Abdulkadir_Aksu.Android\obj\Debug\120\lp\55\jl\res\values\styles.xml
 LinearLayout;C:\Mobile_Project_Abdulkadir_Aksu\Mobile_Project_Abdulkadir_Aksu\Mobile_Project_Abdulkadir_Aksu.Android\obj\Debug\120\lp\55\jl\res\layout\bottomtablayout.xml
+LinearLayout;obj\Debug\120\res\layout\mapinfowindow.xml
+LinearLayout;obj\Debug\120\res\layout\xamarinmapinfowindow.xml
 paths;C:\Mobile_Project_Abdulkadir_Aksu\Mobile_Project_Abdulkadir_Aksu\Mobile_Project_Abdulkadir_Aksu.Android\obj\Debug\120\lp\53\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 resources;C:\Mobile_Project_Abdulkadir_Aksu\Mobile_Project_Abdulkadir_Aksu\Mobile_Project_Abdulkadir_Aksu.Android\obj\Debug\120\lp\55\jl\res\values\attrs.xml
 resources;C:\Mobile_Project_Abdulkadir_Aksu\Mobile_Project_Abdulkadir_Aksu\Mobile_Project_Abdulkadir_Aksu.Android\obj\Debug\120\lp\55\jl\res\values\strings.xml
@@ -42,6 +48,8 @@ set;C:\Mobile_Project_Abdulkadir_Aksu\Mobile_Project_Abdulkadir_Aksu\Mobile_Proj
 string;C:\Mobile_Project_Abdulkadir_Aksu\Mobile_Project_Abdulkadir_Aksu\Mobile_Project_Abdulkadir_Aksu.Android\obj\Debug\120\lp\55\jl\res\values\strings.xml
 style;C:\Mobile_Project_Abdulkadir_Aksu\Mobile_Project_Abdulkadir_Aksu\Mobile_Project_Abdulkadir_Aksu.Android\obj\Debug\120\lp\55\jl\res\values\styles.xml
 style;obj\Debug\120\res\values\styles.xml
+TextView;obj\Debug\120\res\layout\mapinfowindow.xml
+TextView;obj\Debug\120\res\layout\xamarinmapinfowindow.xml
 translate;C:\Mobile_Project_Abdulkadir_Aksu\Mobile_Project_Abdulkadir_Aksu\Mobile_Project_Abdulkadir_Aksu.Android\obj\Debug\120\lp\55\jl\res\anim\enterfromleft.xml
 translate;C:\Mobile_Project_Abdulkadir_Aksu\Mobile_Project_Abdulkadir_Aksu\Mobile_Project_Abdulkadir_Aksu.Android\obj\Debug\120\lp\55\jl\res\anim\enterfromright.xml
 translate;C:\Mobile_Project_Abdulkadir_Aksu\Mobile_Project_Abdulkadir_Aksu\Mobile_Project_Abdulkadir_Aksu.Android\obj\Debug\120\lp\55\jl\res\anim\exittoleft.xml

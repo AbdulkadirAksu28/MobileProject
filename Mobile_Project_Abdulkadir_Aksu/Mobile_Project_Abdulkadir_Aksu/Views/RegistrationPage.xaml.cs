@@ -1,9 +1,9 @@
-﻿using Project_Mobile_Abdulkadir_Aksu.ViewModels;
+﻿using Mobile_Project_Abdulkadir_Aksu.ViewModels;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Project_Mobile_Abdulkadir_Aksu.Views
+namespace Mobile_Project_Abdulkadir_Aksu.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RegistrationPage : ContentPage

@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Mobile_Project_Abdulkadir_Aksu.Views.AboutPage.xaml", "Views/AboutPage.xaml", typeof(global::Project_Mobile_Abdulkadir_Aksu.Views.AboutPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Mobile_Project_Abdulkadir_Aksu.Views.AboutPage.xaml", "Views/AboutPage.xaml", typeof(global::Mobile_Project_Abdulkadir_Aksu.Views.AboutPage))]
 
-namespace Project_Mobile_Abdulkadir_Aksu.Views {
+namespace Mobile_Project_Abdulkadir_Aksu.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\AboutPage.xaml")]

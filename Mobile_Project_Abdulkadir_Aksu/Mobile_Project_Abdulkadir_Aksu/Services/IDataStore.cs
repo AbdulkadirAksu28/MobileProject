@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Project_Mobile_Abdulkadir_Aksu.Services
+namespace Mobile_Project_Abdulkadir_Aksu.Services
 {
     public interface IDataStore<T>
     {

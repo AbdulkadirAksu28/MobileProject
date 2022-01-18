@@ -107,7 +107,7 @@ androidx.asynclayoutinflater.asynclayoutinflater.aar
 androidx.legacy.legacy-support-core-ui.aar
 androidx.legacy.legacy-support-v4.aar
 androidx.browser.browser.aar
-playservicesbasement-17.1.0.aar
-playservicestasks-17.0.0.aar
-playservicesbase-17.1.0.aar
-playservicesmaps-17.0.0.aar
+playservicesbasement-17.6.0.aar
+playservicestasks-17.2.1.aar
+playservicesbase-17.6.0.aar
+playservicesmaps-17.0.1.aar

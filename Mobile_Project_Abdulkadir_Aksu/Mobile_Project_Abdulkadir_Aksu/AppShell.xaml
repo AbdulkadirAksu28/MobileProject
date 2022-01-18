@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Shell xmlns="http://xamarin.com/schemas/2014/forms" 
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-       xmlns:local="clr-namespace:Project_Mobile_Abdulkadir_Aksu.Views"
-       Title="Project_Mobile_Abdulkadir_Aksu"
-       x:Class="Project_Mobile_Abdulkadir_Aksu.AppShell">
+       xmlns:local="clr-namespace:Mobile_Project_Abdulkadir_Aksu.Views"
+       Title="Mobile_Project_Abdulkadir_Aksu"
+       x:Class="Mobile_Project_Abdulkadir_Aksu.AppShell">
 
     <!--
         The overall app visual hierarchy is defined here, along with navigation.
@@ -89,6 +89,10 @@
     <FlyoutItem Title="Map" Icon="icon_map.png">
         <ShellContent Route="MapsPage" ContentTemplate="{DataTemplate local:MapsPage}" />
     </FlyoutItem>
+    <FlyoutItem Title="Map" Icon="icon_map.png">
+        <ShellContent Route="TestPage" ContentTemplate="{DataTemplate local:TestPage}" />
+    </FlyoutItem>
+
     <FlyoutItem Title="About" Icon="icon_about.png">
         <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
     </FlyoutItem>

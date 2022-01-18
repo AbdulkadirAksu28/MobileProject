@@ -1,8 +1,8 @@
-﻿using Project_Mobile_Abdulkadir_Aksu.ViewModels;
+﻿using Mobile_Project_Abdulkadir_Aksu.ViewModels;
 using System.ComponentModel;
 using Xamarin.Forms;
 
-namespace Project_Mobile_Abdulkadir_Aksu.Views
+namespace Mobile_Project_Abdulkadir_Aksu.Views
 {
     public partial class ItemDetailPage : ContentPage
     {

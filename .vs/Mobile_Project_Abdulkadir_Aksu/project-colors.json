@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "e5673cea-9ede-4788-9d75-d11e85ddcacd": {
+      "ProjectGuid": "e5673cea-9ede-4788-9d75-d11e85ddcacd",
+      "DisplayName": "Mobile_Project_Abdulkadir_Aksu",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "99ace2e1-ef1b-4c58-a9b0-09749b42470c": {
+      "ProjectGuid": "99ace2e1-ef1b-4c58-a9b0-09749b42470c",
+      "DisplayName": "Mobile_Project_Abdulkadir_Aksu.Android",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

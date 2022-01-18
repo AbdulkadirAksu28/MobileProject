@@ -1,6 +1,6 @@
 ﻿using Firebase.Database;
 using Firebase.Database.Query;
-using Project_Mobile_Abdulkadir_Aksu.Models;
+using Mobile_Project_Abdulkadir_Aksu.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project_Mobile_Abdulkadir_Aksu.ViewModels
+namespace Mobile_Project_Abdulkadir_Aksu.ViewModels
 {
     public class FirebaseHelper
     {

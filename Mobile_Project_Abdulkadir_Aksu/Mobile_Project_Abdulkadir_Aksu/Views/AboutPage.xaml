@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Project_Mobile_Abdulkadir_Aksu.Views.AboutPage"
-             xmlns:vm="clr-namespace:Project_Mobile_Abdulkadir_Aksu.ViewModels"
+             x:Class="Mobile_Project_Abdulkadir_Aksu.Views.AboutPage"
+             xmlns:vm="clr-namespace:Mobile_Project_Abdulkadir_Aksu.ViewModels"
              Title="{Binding Title}">
     
     <ContentPage.BindingContext>

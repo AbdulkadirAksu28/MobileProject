@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Project_Mobile_Abdulkadir_Aksu.Models
+namespace Mobile_Project_Abdulkadir_Aksu.Models
 {
     public class Users
     {

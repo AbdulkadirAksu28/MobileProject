@@ -1,11 +1,11 @@
-﻿using Project_Mobile_Abdulkadir_Aksu.Views;
+﻿using Mobile_Project_Abdulkadir_Aksu.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
 using Xamarin.Forms;
 
-namespace Project_Mobile_Abdulkadir_Aksu.ViewModels
+namespace Mobile_Project_Abdulkadir_Aksu.ViewModels
 {
     public class RegistrationViewModel : INotifyPropertyChanged
     {

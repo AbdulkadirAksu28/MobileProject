@@ -1,12 +1,12 @@
-﻿using Project_Mobile_Abdulkadir_Aksu.Models;
-using Project_Mobile_Abdulkadir_Aksu.Services;
+﻿using Mobile_Project_Abdulkadir_Aksu.Models;
+using Mobile_Project_Abdulkadir_Aksu.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using Xamarin.Forms;
 
-namespace Project_Mobile_Abdulkadir_Aksu.ViewModels
+namespace Mobile_Project_Abdulkadir_Aksu.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Project_Mobile_Abdulkadir_Aksu.Models
+namespace Mobile_Project_Abdulkadir_Aksu.Models
 {
     public class Item
     {

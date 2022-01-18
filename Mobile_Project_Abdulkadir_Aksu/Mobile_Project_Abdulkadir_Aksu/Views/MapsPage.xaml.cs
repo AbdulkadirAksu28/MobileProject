@@ -1,4 +1,4 @@
-﻿using Project_Mobile_Abdulkadir_Aksu.ViewModels;
+﻿using Mobile_Project_Abdulkadir_Aksu.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,10 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
-using Xamarin.Forms.Maps;
 using Xamarin.Forms.Xaml;
+using Xamarin.Forms.Maps;
+using Mobile_Project_Abdulkadir_Aksu.Models;
 
-namespace Project_Mobile_Abdulkadir_Aksu.Views
+namespace Mobile_Project_Abdulkadir_Aksu.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MapsPage : ContentPage
@@ -27,7 +28,7 @@ namespace Project_Mobile_Abdulkadir_Aksu.Views
         //private void ApplyMapTheme()
         //{
         //    var assembly = typeof(MapsPage).GetTypeInfo().Assembly;
-        //    var stream = assembly.GetManifestResourceStream($"Project_Mobile_Abdulkadir_Aksu.MapResources.MapTheme.json");
+        //    var stream = assembly.GetManifestResourceStream($"Mobile_Project_Abdulkadir_Aksu.MapResources.MapTheme.json");
         //    string themeFile;
         //    using (var reader = new System.IO.StreamReader(stream))
         //    {
@@ -73,10 +74,29 @@ namespace Project_Mobile_Abdulkadir_Aksu.Views
         async void OnMapClicked(object sender, MapClickedEventArgs e)
         {
             await DisplayAlert("Coordinates", $"Lat: {e.Position.Latitude}, Long: {e.Position.Longitude}", "OK");
+            try
+            {
+                var addresses = await _geocoder.GetAddressesForPositionAsync(e.Position);
 
-            var addresses = await _geocoder.GetAddressesForPositionAsync(e.Position);
+                await DisplayAlert("Address", addresses.FirstOrDefault()?.ToString(), "OK");
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Error", "Unable to get address: " + ex, "OK");
+            }
 
-            await DisplayAlert("Address", addresses.FirstOrDefault()?.ToString(), "OK");
+            CustomPin p = new CustomPin()
+            {
+                Type = PinType.Generic,
+                Label = "label",
+                Address = "geocoder calismio",
+                Icon = "icon_pig.png",
+                Position = new Position(e.Position.Latitude, e.Position.Longitude),
+                Name = "test",
+                Url = "http://xamarin.com/about/"
+
+            };
+            MyMap.Pins.Add(p);
 
             //var positions = await _geocoder.GetPositionsForAddressAsync("PXL, Hasselt");
 

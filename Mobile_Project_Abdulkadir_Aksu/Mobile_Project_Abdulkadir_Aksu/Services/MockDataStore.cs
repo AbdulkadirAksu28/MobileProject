@@ -1,10 +1,10 @@
-﻿using Project_Mobile_Abdulkadir_Aksu.Models;
+﻿using Mobile_Project_Abdulkadir_Aksu.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Project_Mobile_Abdulkadir_Aksu.Services
+namespace Mobile_Project_Abdulkadir_Aksu.Services
 {
     public class MockDataStore : IDataStore<Item>
     {

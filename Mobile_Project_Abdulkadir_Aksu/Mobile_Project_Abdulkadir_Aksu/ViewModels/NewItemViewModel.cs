@@ -1,11 +1,11 @@
-﻿using Project_Mobile_Abdulkadir_Aksu.Models;
+﻿using Mobile_Project_Abdulkadir_Aksu.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
 
-namespace Project_Mobile_Abdulkadir_Aksu.ViewModels
+namespace Mobile_Project_Abdulkadir_Aksu.ViewModels
 {
     public class NewItemViewModel : BaseViewModel
     {
