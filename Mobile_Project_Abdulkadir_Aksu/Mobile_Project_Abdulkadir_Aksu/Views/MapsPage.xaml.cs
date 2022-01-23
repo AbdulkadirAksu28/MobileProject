@@ -21,10 +21,9 @@ namespace Mobile_Project_Abdulkadir_Aksu.Views
     public partial class MapsPage : ContentPage
     {
         public ObservableCollection<Item> Animals;
-        public Command LoadAnimals { get; }
         private readonly Geocoder _geocoder = new Geocoder();
         public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
-        string _url;
+
         public MapsPage()
         {
             InitializeComponent();
@@ -61,10 +60,6 @@ namespace Mobile_Project_Abdulkadir_Aksu.Views
             catch (Exception ex)
             {
                 Debug.WriteLine(ex);
-            }
-            finally
-            {
-                IsBusy = false;
             }
         }
 
@@ -127,30 +122,40 @@ namespace Mobile_Project_Abdulkadir_Aksu.Views
             //{
             //    await DisplayAlert("Error", "Unable to get address: " + ex, "OK");
             //}
-
-            var adrs = await _geocoder.GetAddressesForPositionAsync(e.Position);
-            DateTime today = DateTime.Now;
-            string currentTime = today.ToString("h:mm tt");
-            ExecuteLoadAnimals();
-            string action = await DisplayActionSheet("Which animal have you spot", "Cancel", null, Animals.Select(animal => animal.Text).ToArray());
-            Debug.WriteLine("Action: " + action);
-
-            List<Item> i = Animals.Where(a => a.Text == action).ToList();
-
-
-            if (action != "Cancel")
+            try
             {
-                CustomPin p = new CustomPin()
+                var adrs = await _geocoder.GetAddressesForPositionAsync(e.Position);
+                DateTime today = DateTime.Now;
+                string currentTime = today.ToString("h:mm tt");
+                ExecuteLoadAnimals();
+                string action = await DisplayActionSheet("Which animal have you spot", "Cancel", null, Animals.Select(animal => animal.Text).ToArray());
+                Debug.WriteLine("Action: " + action);
+
+                List<Item> i = Animals.Where(a => a.Text == action).ToList();
+
+
+                if (action != "Cancel")
                 {
-                    Type = PinType.Generic,
-                    Label = $"{action} spotted at {currentTime}",
-                    Address = adrs.FirstOrDefault()?.ToString(),
-                    Position = new Position(e.Position.Latitude, e.Position.Longitude),
-                    Name = action,
-                    Url = i[0].URL,
-                };
-                MyMap.CustomPins.Add(p);
-                MyMap.Pins.Add(p);
+                    CustomPin p = new CustomPin()
+                    {
+                        Type = PinType.Generic,
+                        Label = $"{action} spotted at {currentTime}",
+                        Address = adrs.FirstOrDefault()?.ToString(),
+                        Position = new Position(e.Position.Latitude, e.Position.Longitude),
+                        Name = action,
+                        Url = i[0].URL,
+                    };
+                    MyMap.CustomPins.Add(p);
+                    MyMap.Pins.Add(p);
+
+                }
+            }
+            catch (Exception )
+            {
+
+                await DisplayAlert("Error", "Unable to get address: due to grpc failed ", "OK"); ;
+            }
+            
             }
 
 
@@ -167,5 +172,5 @@ namespace Mobile_Project_Abdulkadir_Aksu.Views
         //    await Shell.Current.GoToAsync($"//{nameof(LoginPage)}");
             
         //}
-    }
+    
 }

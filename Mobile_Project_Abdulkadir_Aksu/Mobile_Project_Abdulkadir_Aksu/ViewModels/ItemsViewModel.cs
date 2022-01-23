@@ -16,6 +16,7 @@ namespace Mobile_Project_Abdulkadir_Aksu.ViewModels
         public Command LoadItemsCommand { get; }
         public Command AddItemCommand { get; }
         public Command<Item> ItemTapped { get; }
+        public Command Search { get; }
 
         public ItemsViewModel()
         {
