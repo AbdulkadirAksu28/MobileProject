@@ -65,6 +65,31 @@ Doel is om de mensen die last hebben van wilde dieren in hun buurt geruststellen
 </br>* User kan account verwijderen connected met firenase db op settingspage.
 </br>* Git push,pull problemen, mislukt aantal keren push en commits, merge conflicts, solution file is oud terwijl de rest van de folders up to date zijn.
 </br>* Eigen repo aangemaakt https://github.com/AbdulkadirAksu28/MobileProject.
+<h4> Week van 17-23 Januari </h4>
+</br>* Veranderen van alle namespaces.
+</br>* Toevoegen van een custom map renderer en de daarbij horende models.
+</br>* Toevoegen van styles.
+</br>* Toevoegen van verschillende dieren.
+</br>* Mogelijk maken om extra dieren toe te voegen.
+</br>* Converter NullToVisibility toegevoegd, Behaviour bug issues gefixed.
+</br>* Searchbar added.
+</br>* Code cleaning.
 
-## Link video
 ## Bronnen
+</br> https://github.com/jfversluis 
+</br> https://www.youtube.com/channel/UCBBZ2kXWmd8eXlHg2wEaClw
+</br> https://www.c-sharpcorner.com/article/xamarin-forms-login-forms-with-firebase-real-time-database-mvvm/
+</br> https://docs.microsoft.com/en-gb/xamarin/
+</br> https://stackoverflow.com/
+</br> https://social.msdn.microsoft.com/
+</br> http://gjhdigital.com/xamarin/xamarin-forms-maps-add-custom-pin-icon-with-click-event/
+</br> https://github.com/ziyasal/FireSharp/
+</br> https://github.com/xamarin/xamarin-forms-samples
+</br> https://icons8.com/icons
+</br> https://www.iconfinder.com/
+</br> https://www.flaticon.com/
+
+
+
+
+
