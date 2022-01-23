@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"       
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps" xmlns:local="clr-namespace:Mobile_Project_Abdulkadir_Aksu.Controls"
              x:Class="Mobile_Project_Abdulkadir_Aksu.Views.MapsPage"
              >
     <ContentPage.ToolbarItems>
@@ -10,22 +10,8 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <maps:Map TrafficEnabled="False"  MapClicked="OnMapClicked" x:Name="MyMap">
-                <x:Arguments>
-                    <maps:MapSpan>
-                        <x:Arguments>
-                            <maps:Position>
-                                <x:Arguments>
-                                    <x:Double>50.93750774805318</x:Double>
-                                    <x:Double>5.348119809329606</x:Double>
-                                </x:Arguments>
-                            </maps:Position>
-                            <x:Double>0.01</x:Double>
-                            <x:Double>0.01</x:Double>
-                        </x:Arguments>
-                    </maps:MapSpan>
-                </x:Arguments>
-            </maps:Map>
+            <local:CustomMap x:Name="MyMap"
+                     MapType="Street" MapClicked="OnMapClicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

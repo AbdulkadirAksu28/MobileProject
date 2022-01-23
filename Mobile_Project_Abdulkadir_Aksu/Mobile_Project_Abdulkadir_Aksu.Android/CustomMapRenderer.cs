@@ -4,13 +4,14 @@ using Android.Content;
 using Android.Gms.Maps;
 using Android.Gms.Maps.Model;
 using Android.Widget;
+using Mobile_Project_Abdulkadir_Aksu.Controls;
 using Mobile_Project_Abdulkadir_Aksu.Droid;
 using Mobile_Project_Abdulkadir_Aksu.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 using Xamarin.Forms.Maps.Android;
 
-[assembly: ExportRenderer(typeof(Map), typeof(CustomMapRenderer))]
+[assembly: ExportRenderer(typeof(CustomMap), typeof(CustomMapRenderer))]
 namespace Mobile_Project_Abdulkadir_Aksu.Droid
 {
     public class CustomMapRenderer : MapRenderer, GoogleMap.IInfoWindowAdapter
@@ -32,8 +33,8 @@ namespace Mobile_Project_Abdulkadir_Aksu.Droid
 
             if (e.NewElement != null)
             {
-                var formsMap = (Map)e.NewElement;
-                customPins = (List<CustomPin>)formsMap.Pins;
+                var formsMap = (CustomMap)e.NewElement;
+                customPins = formsMap.CustomPins;
             }
         }
 
@@ -47,38 +48,33 @@ namespace Mobile_Project_Abdulkadir_Aksu.Droid
 
         protected override MarkerOptions CreateMarker(Pin pin)
         {
+            CustomPin customPin = (CustomPin)pin;
             var marker = new MarkerOptions();
-            CustomPin p = new CustomPin();
-            foreach (var cp in customPins)
-            {
-                if (cp.Position == pin.Position)
-                {
-                    p = cp;
-                }
-            }
             marker.SetPosition(new LatLng(pin.Position.Latitude, pin.Position.Longitude));
             marker.SetTitle(pin.Label);
             marker.SetSnippet(pin.Address);
-            marker.SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.icon_pig));
-            //marker.SetIcon(BitmapDescriptorFactory.FromFile(p.Icon));
+            if (customPin.Name.Equals("Wild boars"))
+            {
+                marker.SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.icon_pig));
+            }
+            else if (customPin.Name.Equals("Deer"))
+            {
+                marker.SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.icon_deer));
+            }
+            else if (customPin.Name.Equals("Fox"))
+            {
+                marker.SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.icon_fox));
+            }
+            else if (customPin.Name.Equals("Wolf"))
+            {
+                marker.SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.icon_wolf));
+            }
+            else
+            {
+                marker.SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.icon_animal));
+            }
+
             return marker;
-        }
-
-        void OnInfoWindowClick(object sender, GoogleMap.InfoWindowClickEventArgs e)
-        {
-            var customPin = GetCustomPin(e.Marker);
-            if (customPin == null)
-            {
-                throw new Exception("Custom pin not found");
-            }
-
-            if (!string.IsNullOrWhiteSpace(customPin.Url))
-            {
-                var url = Android.Net.Uri.Parse(customPin.Url);
-                var intent = new Intent(Intent.ActionView, url);
-                intent.AddFlags(ActivityFlags.NewTask);
-                Android.App.Application.Context.StartActivity(intent);
-            }
         }
 
         public Android.Views.View GetInfoContents(Marker marker)
@@ -94,14 +90,16 @@ namespace Mobile_Project_Abdulkadir_Aksu.Droid
                     throw new Exception("Custom pin not found");
                 }
 
-                if (customPin.Name.Equals("Xamarin"))
-                {
-                    view = inflater.Inflate(Resource.Layout.XamarinMapInfoWindow, null);
-                }
-                else
-                {
-                    view = inflater.Inflate(Resource.Layout.MapInfoWindow, null);
-                }
+                view = inflater.Inflate(Resource.Layout.XamarinMapInfoWindow, null);
+
+                //if (customPin.Name.Equals("Xamarin"))
+                //{
+                    
+                //}
+                //else
+                //{
+                //    view = inflater.Inflate(Resource.Layout.MapInfoWindow, null);
+                //}
 
                 var infoTitle = view.FindViewById<TextView>(Resource.Id.InfoWindowTitle);
                 var infoSubtitle = view.FindViewById<TextView>(Resource.Id.InfoWindowSubtitle);
@@ -118,6 +116,22 @@ namespace Mobile_Project_Abdulkadir_Aksu.Droid
                 return view;
             }
             return null;
+        }
+        void OnInfoWindowClick(object sender, GoogleMap.InfoWindowClickEventArgs e)
+        {
+            var customPin = GetCustomPin(e.Marker);
+            if (customPin == null)
+            {
+                throw new Exception("Custom pin not found");
+            }
+
+            if (!string.IsNullOrWhiteSpace(customPin.Url))
+            {
+                var url = Android.Net.Uri.Parse(customPin.Url);
+                var intent = new Intent(Intent.ActionView, url);
+                intent.AddFlags(ActivityFlags.NewTask);
+                Android.App.Application.Context.StartActivity(intent);
+            }
         }
 
         public Android.Views.View GetInfoWindow(Marker marker)

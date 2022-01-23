@@ -9,6 +9,7 @@
              Shell.FlyoutBehavior="Disabled">
     <ContentPage.Content>
         <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
+            <Image Source="logo_animal_tracker.png" HorizontalOptions="Center" VerticalOptions="Center"/>
             <Label Text="Username:"/>
             <Entry Margin="0,5" Placeholder="Email" Text="{Binding Email}" />
             <Label Text="Password:"/>

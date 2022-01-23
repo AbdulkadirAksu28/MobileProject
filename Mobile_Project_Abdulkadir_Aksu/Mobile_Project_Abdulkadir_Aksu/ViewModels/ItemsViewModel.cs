@@ -19,7 +19,7 @@ namespace Mobile_Project_Abdulkadir_Aksu.ViewModels
 
         public ItemsViewModel()
         {
-            Title = "Browse";
+            Title = "Browse through the animals";
             Items = new ObservableCollection<Item>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 

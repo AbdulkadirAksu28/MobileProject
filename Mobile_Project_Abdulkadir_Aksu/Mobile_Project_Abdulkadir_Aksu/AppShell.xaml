@@ -89,10 +89,6 @@
     <FlyoutItem Title="Map" Icon="icon_map.png">
         <ShellContent Route="MapsPage" ContentTemplate="{DataTemplate local:MapsPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Map" Icon="icon_map.png">
-        <ShellContent Route="TestPage" ContentTemplate="{DataTemplate local:TestPage}" />
-    </FlyoutItem>
-
     <FlyoutItem Title="About" Icon="icon_about.png">
         <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
     </FlyoutItem>

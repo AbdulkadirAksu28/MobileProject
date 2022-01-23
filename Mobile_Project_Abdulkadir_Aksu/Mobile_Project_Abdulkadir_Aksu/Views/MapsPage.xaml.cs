@@ -10,19 +10,60 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Forms.Maps;
 using Mobile_Project_Abdulkadir_Aksu.Models;
+using Mobile_Project_Abdulkadir_Aksu.Services;
+using System.Diagnostics;
+using System.Collections.ObjectModel;
 
 namespace Mobile_Project_Abdulkadir_Aksu.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MapsPage : ContentPage
     {
+        public ObservableCollection<Item> Animals;
+        public Command LoadAnimals { get; }
         private readonly Geocoder _geocoder = new Geocoder();
+        public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
         public MapsPage()
         {
             InitializeComponent();
             DisplayCurLocation();
+            Animals = new ObservableCollection<Item>();
+            ExecuteLoadAnimals();
+            CustomPin p = new CustomPin()
+            {
+                Type = PinType.Generic,
+                Label = "pig spotted",
+                Address = "Mijnterril Heusden-Zolder",
+                Position = new Position(51.0593, 5.3285),
+                Name = "Wild boars",
+                Url = "https://www.nparks.gov.sg/gardens-parks-and-nature/dos-and-donts/animal-advisories/wild-boars"
+
+            };
+            MyMap.CustomPins = new List<CustomPin> { p };
+            MyMap.Pins.Add(p);
+            
             this.BindingContext = new MapsViewModel();
             //ApplyMapTheme();
+        }
+        public async void ExecuteLoadAnimals()
+        {
+            try
+            {
+                Animals.Clear();
+                var items = await DataStore.GetItemsAsync(true);
+                foreach (var item in items)
+                {
+                    Animals.Add(item);
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+            }
+            finally
+            {
+                IsBusy = false;
+            }
         }
 
         //private void ApplyMapTheme()
@@ -34,7 +75,7 @@ namespace Mobile_Project_Abdulkadir_Aksu.Views
         //    {
         //        themeFile = reader.ReadToEnd();
         //    }
-            
+
         //}
 
         public async void DisplayCurLocation()
@@ -73,29 +114,37 @@ namespace Mobile_Project_Abdulkadir_Aksu.Views
 
         async void OnMapClicked(object sender, MapClickedEventArgs e)
         {
-            await DisplayAlert("Coordinates", $"Lat: {e.Position.Latitude}, Long: {e.Position.Longitude}", "OK");
-            try
-            {
-                var addresses = await _geocoder.GetAddressesForPositionAsync(e.Position);
+            //await DisplayAlert("Coordinates", $"Lat: {e.Position.Latitude}, Long: {e.Position.Longitude}", "OK");
+            //try
+            //{
+            //    var addresses = await _geocoder.GetAddressesForPositionAsync(e.Position);
 
-                await DisplayAlert("Address", addresses.FirstOrDefault()?.ToString(), "OK");
-            }
-            catch (Exception ex)
-            {
-                await DisplayAlert("Error", "Unable to get address: " + ex, "OK");
-            }
+            //    await DisplayAlert("Address", addresses.FirstOrDefault()?.ToString(), "OK");
+            //}
+            //catch (Exception ex)
+            //{
+            //    await DisplayAlert("Error", "Unable to get address: " + ex, "OK");
+            //}
+
+            var adrs = await _geocoder.GetAddressesForPositionAsync(e.Position);
+            DateTime today = DateTime.Now;
+            string currentTime = today.ToString("h:mm tt");
+
+            string action = await DisplayActionSheet("Which animal have you spot", "Cancel", null, Animals.Select(animal => animal.Text).ToArray());
+            Debug.WriteLine("Action: " + action);
+
 
             CustomPin p = new CustomPin()
             {
                 Type = PinType.Generic,
-                Label = "label",
-                Address = "geocoder calismio",
-                Icon = "icon_pig.png",
+                Label = $"{action} spotted at {currentTime}",
+                Address = adrs.FirstOrDefault()?.ToString(),
                 Position = new Position(e.Position.Latitude, e.Position.Longitude),
-                Name = "test",
-                Url = "http://xamarin.com/about/"
+                Name = action,
+                Url = "https://www.nparks.gov.sg/gardens-parks-and-nature/dos-and-donts/animal-advisories/wild-boars"
 
             };
+            MyMap.CustomPins.Add(p);
             MyMap.Pins.Add(p);
 
             //var positions = await _geocoder.GetPositionsForAddressAsync("PXL, Hasselt");

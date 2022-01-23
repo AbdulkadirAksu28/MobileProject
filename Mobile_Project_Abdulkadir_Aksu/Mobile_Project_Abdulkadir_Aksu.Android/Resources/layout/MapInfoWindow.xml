@@ -31,5 +31,5 @@
         android:id="@+id/InfoWindowButton"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:src="@drawable/icon_about" />
+        android:src="@drawable/warning" />
 </LinearLayout>
