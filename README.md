@@ -21,29 +21,6 @@ Doel is om de mensen die last hebben van wilde dieren in hun buurt geruststellen
     <img src="screenshots/SS4.jpg" width="100">
 </p>
 
-## **Eventuele pagina’s:**
-</br> **Front page:** 
-</br> -Een Map gecentreerd bij een default plaats (indien eigen locatie gegeven eigen locatie)
-</br> -Actuele ‘’tracking’’ laten zien van wilde beesten.
-</br> -Search bar om een locatie te zoeken.
-</br> -Filter bar.
-</br> -Kunnen filtreren op verschillende dieren.
-</br> -Mogelijkheid om zelf een dier in te kunnen geven op een bepaald locatie.
-</br> -Details bekijken over de recente dieren ingaven op de daarbij horende locatie.
-</br> **Page:** Species page
-</br> -Een list van verschillende actuele dieren die aanwezig kan zijn.
-</br> -Detail page over de dieren om extra informatie en tips te weten over ze
-</br> **Page:** Settings page
-</br> -Dark mode
-</br> -About 
-</br> **Page:** Login page
-</br> -Kunnen inloggen met een form
-</br> -Registreren met je email
-</br> **Shared:** Navbar
-</br> -Navbar met map, species en settings page. Makkelijk kunnen navigeren tussen de verschillende pages.
-
-
-
 ## Logboek
 <h4> Week van 15-21 November </h4>
 </br>* Gebruik gemaakt van de fly-out versie + research over appshell/default gegevens.
