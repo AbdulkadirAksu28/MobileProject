@@ -1,5 +1,3 @@
-# OPMERKING : DE CODE STAAT IN DE BRANCH 'MASTER'
-
 # Project C# Mobile 2021-2022
 * Naam: *Abdulkadir Aksu*
 * Onderwerp: *Animaltracker*
@@ -65,6 +63,9 @@ Doel is om de mensen die last hebben van wilde dieren in hun buurt geruststellen
 </br> https://icons8.com/icons
 </br> https://www.iconfinder.com/
 </br> https://www.flaticon.com/
+
+## Video
+https://web.microsoftstream.com/video/d2617d65-9493-4a57-a94f-689eda7e76e6
 
 
 
