@@ -12,6 +12,7 @@ namespace Mobile_Project_Abdulkadir_Aksu.ViewModels
         private string itemId;
         private string text;
         private string description;
+        private string url;
         public string Id { get; set; }
 
         public string Text
@@ -24,6 +25,11 @@ namespace Mobile_Project_Abdulkadir_Aksu.ViewModels
         {
             get => description;
             set => SetProperty(ref description, value);
+        }
+        public string URL
+        {
+            get => url;
+            set => SetProperty(ref url, value);
         }
 
         public string ItemId
@@ -47,6 +53,7 @@ namespace Mobile_Project_Abdulkadir_Aksu.ViewModels
                 Id = item.Id;
                 Text = item.Text;
                 Description = item.Description;
+                URL = item.URL;
             }
             catch (Exception)
             {
