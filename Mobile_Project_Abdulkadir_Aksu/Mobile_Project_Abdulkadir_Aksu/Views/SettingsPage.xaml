@@ -1,7 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodels="clr-namespace:Mobile_Project_Abdulkadir_Aksu.ViewModels" x:DataType="viewmodels:SettingsViewModel"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodels="clr-namespace:Mobile_Project_Abdulkadir_Aksu.ViewModels" xmlns:converter="clr-namespace:Mobile_Project_Abdulkadir_Aksu.Converters" x:DataType="viewmodels:SettingsViewModel"
              x:Class="Mobile_Project_Abdulkadir_Aksu.Views.SettingsPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converter:NullToVisibilityConverter x:Key="nullToVisibilityConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <!--<TableView Intent="Settings">
             <TableRoot>
