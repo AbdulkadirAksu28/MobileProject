@@ -11,6 +11,7 @@ namespace Mobile_Project_Abdulkadir_Aksu.ViewModels
     {
         private string text;
         private string description;
+        private string url;
 
         public NewItemViewModel()
         {
@@ -23,7 +24,8 @@ namespace Mobile_Project_Abdulkadir_Aksu.ViewModels
         private bool ValidateSave()
         {
             return !String.IsNullOrWhiteSpace(text)
-                && !String.IsNullOrWhiteSpace(description);
+                && !String.IsNullOrWhiteSpace(description)
+                && !String.IsNullOrWhiteSpace(url);
         }
 
         public string Text
@@ -36,6 +38,11 @@ namespace Mobile_Project_Abdulkadir_Aksu.ViewModels
         {
             get => description;
             set => SetProperty(ref description, value);
+        }
+        public string URL
+        {
+            get => url;
+            set => SetProperty(ref url, value);
         }
 
         public Command SaveCommand { get; }
@@ -53,7 +60,8 @@ namespace Mobile_Project_Abdulkadir_Aksu.ViewModels
             {
                 Id = Guid.NewGuid().ToString(),
                 Text = Text,
-                Description = Description
+                Description = Description,
+                URL = URL
             };
 
             await DataStore.AddItemAsync(newItem);

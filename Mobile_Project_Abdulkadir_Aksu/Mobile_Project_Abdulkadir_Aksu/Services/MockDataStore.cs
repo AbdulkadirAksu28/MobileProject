@@ -14,10 +14,10 @@ namespace Mobile_Project_Abdulkadir_Aksu.Services
         {
             items = new List<Item>()
             {
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Wild boars", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Deer", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Fox", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Wolf", Description="This is an item description." }
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Wild boars", Description="This is an item description.",URL="https://restlessbackpacker.com/how-to-survive-a-wild-boar-attack/" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Deer", Description="This is an item description.",URL="https://goneoutdoors.com/fend-off-charging-deer-4464419.html" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Fox", Description="This is an item description.",URL="https://www.humanesociety.org/resources/what-do-about-foxes" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Wolf", Description="This is an item description.",URL="https://restlessbackpacker.com/how-to-survive-a-wolf-attack/" }
             };
         }
 

@@ -36,7 +36,7 @@
                         <FormattedString>
                             <FormattedString.Spans>
                                 <Span Text="Learn more at "/>
-                                <Span Text="https://github.com/PXL-CMobile/project-def-2122-AbdulkadirAksu28" FontAttributes="Bold"/>
+                                <Span Text="https://github.com/AbdulkadirAksu28/MobileProject" FontAttributes="Bold"/>
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>

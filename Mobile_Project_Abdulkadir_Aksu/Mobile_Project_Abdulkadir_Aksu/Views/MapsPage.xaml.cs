@@ -13,6 +13,7 @@ using Mobile_Project_Abdulkadir_Aksu.Models;
 using Mobile_Project_Abdulkadir_Aksu.Services;
 using System.Diagnostics;
 using System.Collections.ObjectModel;
+using System.Linq.Expressions;
 
 namespace Mobile_Project_Abdulkadir_Aksu.Views
 {
@@ -23,12 +24,13 @@ namespace Mobile_Project_Abdulkadir_Aksu.Views
         public Command LoadAnimals { get; }
         private readonly Geocoder _geocoder = new Geocoder();
         public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
+        string _url;
         public MapsPage()
         {
             InitializeComponent();
             DisplayCurLocation();
             Animals = new ObservableCollection<Item>();
-            ExecuteLoadAnimals();
+           
             CustomPin p = new CustomPin()
             {
                 Type = PinType.Generic,
@@ -129,23 +131,28 @@ namespace Mobile_Project_Abdulkadir_Aksu.Views
             var adrs = await _geocoder.GetAddressesForPositionAsync(e.Position);
             DateTime today = DateTime.Now;
             string currentTime = today.ToString("h:mm tt");
-
+            ExecuteLoadAnimals();
             string action = await DisplayActionSheet("Which animal have you spot", "Cancel", null, Animals.Select(animal => animal.Text).ToArray());
             Debug.WriteLine("Action: " + action);
 
+            List<Item> i = Animals.Where(a => a.Text == action).ToList();
 
-            CustomPin p = new CustomPin()
+
+            if (action != "Cancel")
             {
-                Type = PinType.Generic,
-                Label = $"{action} spotted at {currentTime}",
-                Address = adrs.FirstOrDefault()?.ToString(),
-                Position = new Position(e.Position.Latitude, e.Position.Longitude),
-                Name = action,
-                Url = "https://www.nparks.gov.sg/gardens-parks-and-nature/dos-and-donts/animal-advisories/wild-boars"
+                CustomPin p = new CustomPin()
+                {
+                    Type = PinType.Generic,
+                    Label = $"{action} spotted at {currentTime}",
+                    Address = adrs.FirstOrDefault()?.ToString(),
+                    Position = new Position(e.Position.Latitude, e.Position.Longitude),
+                    Name = action,
+                    Url = i[0].URL,
+                };
+                MyMap.CustomPins.Add(p);
+                MyMap.Pins.Add(p);
+            }
 
-            };
-            MyMap.CustomPins.Add(p);
-            MyMap.Pins.Add(p);
 
             //var positions = await _geocoder.GetPositionsForAddressAsync("PXL, Hasselt");
 
