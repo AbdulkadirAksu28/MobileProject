@@ -6,6 +6,33 @@
         Define global resources and styles here, that apply to all pages in your app.
     -->
     <Application.Resources>
+        <Color x:Key="SubtitleTextColor">#0F0C0C</Color>
+
+        <OnPlatform x:Key="TitleFontFamily" x:TypeArguments="x:String">
+            <On Platform="Android" Value="Lobster-Regular" />
+        </OnPlatform>
+
+        <OnPlatform x:Key="BodyFontFamily" x:TypeArguments="x:String">
+            <On Platform="Android" Value="Lobster-Regular" />
+        </OnPlatform> 
+        
+        <Style x:Key="TitleText" TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource SubtitleTextColor}" />
+            <Setter Property="FontFamily" Value="{StaticResource TitleFontFamily}" />
+            <Setter Property="FontSize" Value="30" />
+        </Style>
+
+        <Style x:Key="SubtitleText" TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource SubtitleTextColor}" />
+            <Setter Property="FontFamily" Value="{StaticResource BodyFontFamily}" />
+            <Setter Property="FontSize" Value="Small" />
+        </Style>
+
+        <Style x:Key="BodyText" TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource SubtitleTextColor}" />
+            <Setter Property="FontFamily" Value="{StaticResource BodyFontFamily}" />
+            <Setter Property="FontSize" Value="Medium" />
+        </Style>
         <ResourceDictionary>
             <Color x:Key="Primary">#2196F3</Color>
             <Style TargetType="Button">

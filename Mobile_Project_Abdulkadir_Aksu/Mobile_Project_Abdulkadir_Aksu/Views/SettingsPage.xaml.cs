@@ -20,7 +20,6 @@ namespace Mobile_Project_Abdulkadir_Aksu.Views
             BindingContext = new SettingsViewModel();
             string email = Preferences.Get("UserMail", string.Empty);
             LblEmail.Text = $"Welcome {email}";
-            LblEnkelEmail.Text = email;
 
         }
     }

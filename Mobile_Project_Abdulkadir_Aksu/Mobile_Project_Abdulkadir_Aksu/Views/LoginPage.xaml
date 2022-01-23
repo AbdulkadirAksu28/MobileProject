@@ -2,20 +2,28 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:converter="clr-namespace:Mobile_Project_Abdulkadir_Aksu.Converters" xmlns:viewmodels="clr-namespace:Mobile_Project_Abdulkadir_Aksu.ViewModels" x:DataType="viewmodels:LoginViewModel"
              mc:Ignorable="d"
              x:Class="Mobile_Project_Abdulkadir_Aksu.Views.LoginPage"
              Shell.NavBarIsVisible="False"
              Shell.FlyoutBehavior="Disabled">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converter:NullToVisibilityConverter x:Key="nullToVisibilityConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
     <ContentPage.Content>
+        
         <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
             <Image Source="logo_animal_tracker.png" HorizontalOptions="Center" VerticalOptions="Center"/>
-            <Label Text="Username:"/>
+            <Label Style="{StaticResource BodyText}" Text="Username:"/>
             <Entry Margin="0,5" Placeholder="Email" Text="{Binding Email}" />
-            <Label Text="Password:"/>
+            <Label Style="{StaticResource BodyText}" Text="Password:"/>
             <Entry Margin="0,5" IsPassword="True" Placeholder="Password" Text="{Binding Password}" />
-            <Button Margin="0,15" VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
-            <Label Text="Register" HorizontalOptions="Center">
+            <Button Margin="0,15" VerticalOptions="Center" Text="Login" 
+                    IsVisible="{Binding Email, Converter={StaticResource nullToVisibilityConverter}}" Command="{Binding LoginCommand}"/>
+            <Label Style="{StaticResource SubtitleText}" Text="Register" HorizontalOptions="Center">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding GoToRegisterCommand}"/>
                 </Label.GestureRecognizers>

@@ -5,12 +5,12 @@
              Title="{Binding Title}">
 
     <StackLayout Spacing="20" Padding="15">
-        <Label Text="Text:" FontSize="Medium" />
-        <Label Text="{Binding Text}" FontSize="Small"/>
-        <Label Text="Description:" FontSize="Medium" />
-        <Label Text="{Binding Description}" FontSize="Small"/>
-        <Label Text="URL:" FontSize="Medium" />
-        <Label Text="{Binding URL}" FontSize="Small"/>
+        <Label Style="{StaticResource BodyText}" Text="Text:"/>
+        <Label Style="{StaticResource SubtitleText}" Text="{Binding Text}"/>
+        <Label Style="{StaticResource BodyText}" Text="Description:"/>
+        <Label Style="{StaticResource SubtitleText}" Text="{Binding Description}"/>
+        <Label Style="{StaticResource BodyText}" Text="URL:"/>
+        <Label Style="{StaticResource SubtitleText}" Text="{Binding URL}"/>
     </StackLayout>
     
 </ContentPage>
